@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">LatinAmericanBank</string>
+    <string name="app_name">Latin American Bank</string>
+    <string name="signupActivity">Signup</string>
 </resources>
