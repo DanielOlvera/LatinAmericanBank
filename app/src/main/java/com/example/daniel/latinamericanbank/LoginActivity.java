@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.digits.sdk.android.AuthCallback;
@@ -24,6 +25,11 @@ import io.fabric.sdk.android.Fabric;
 
 public class LoginActivity extends AppCompatActivity {
 
+    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
+    private static final String TWITTER_KEY = "I0tOlxeXGnNlAkqLi4bKOuN3L";
+    private static final String TWITTER_SECRET = "AOF8kM1MfG8XGhLzFeLEgxoLYokRQs4t24vKX6PkvZC3Cr7ZNM";
+    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
+
     private static final String TAG = "LoginActivityTAG_";
     private static final int REQUEST_SIGNUP = 0;
 
@@ -34,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
     @BindView(R.id.la_lgnBtn)
     Button logButton;
     @BindView(R.id.la_signUpLink)
-    Button signButton;
+    TextView signupLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        signButton.setOnClickListener(new View.OnClickListener() {
+        signupLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SignupActivity.class);

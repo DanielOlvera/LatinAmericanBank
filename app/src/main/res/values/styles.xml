@@ -11,8 +11,22 @@
         <item name="android:windowBackground">@drawable/splash</item>
     </style>
     <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
-        <item name="colorAccent">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColorPrimary">@color/colorGray400</item>
         <item name="android:background">@color/colorRed800</item>
+    </style>
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorRed800</item>
+        <item name="colorPrimaryDark">@color/colorRed900</item>
+        <item name="colorAccent">@color/colorWhite</item>
+
+        <item name="android:windowBackground">@color/colorGray100</item>
+
+        <item name="colorControlNormal">@color/colorGray600</item>
+        <item name="colorControlActivated">@color/colorRed700</item>
+        <item name="colorControlHighlight">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorGray600</item>
+
+        <item name="colorButtonNormal">@color/colorRed900</item>
     </style>
 </resources>
