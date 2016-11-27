@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.daniel.latinamericanbank.R;
 
@@ -46,6 +47,13 @@ public class UserWindowActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.pm_payMenu:
+                Toast.makeText(this, "New Payment Menu", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.tm_transfermenu:
+                Toast.makeText(this, "New Transfer Menu", Toast.LENGTH_SHORT).show();
+        }
         return super.onOptionsItemSelected(item);
     }
 }

@@ -2,7 +2,6 @@ package com.example.daniel.latinamericanbank.userswindow;
 
 
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -16,19 +15,12 @@ import android.widget.TextView;
 import com.example.daniel.latinamericanbank.R;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 /**
  * A simple {@link Fragment} subclass.
  *
  */
 public class PayFragment extends Fragment {
-
-    @BindView(R.id.fp_textVw)
-    TextView textView;
-
-    private String title;
-    private int page;
 
     public PayFragment() {
         // Required empty public constructor

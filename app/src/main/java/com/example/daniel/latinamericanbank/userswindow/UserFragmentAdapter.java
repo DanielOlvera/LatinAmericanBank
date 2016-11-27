@@ -10,7 +10,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class UserFragmentAdapter extends FragmentPagerAdapter {
 
-    private static int NUM_TABS = 1;
+    private static int NUM_TABS = 2;
     public static final String UI_TAB_PAY = "Payments";
     public static final String UI_TAB_TRANS = "Transfers";
     public static final String UI_TAB_BAL = "Balance";
@@ -24,6 +24,8 @@ public class UserFragmentAdapter extends FragmentPagerAdapter {
         switch (position){
             case 0:
                 return PayFragment.newInstance();
+            case 1:
+                return TransferFragment.newInstance();
         }
         return null;
     }
@@ -40,8 +42,8 @@ public class UserFragmentAdapter extends FragmentPagerAdapter {
                 return UI_TAB_PAY;
             case 1:
                 return UI_TAB_TRANS;
-            case 2:
-                return UI_TAB_BAL;
+//            case 2:
+//                return UI_TAB_BAL;
         }
         return super.getPageTitle(position);
     }
