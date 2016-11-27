@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/pm_payMenu"
+        android:title="Payment"
+        android:orderInCategory="10"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/payment_menu">#B71C1C</item>
+</menu>

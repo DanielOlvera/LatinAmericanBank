@@ -12,10 +12,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.digits.sdk.android.AuthCallback;
+import com.digits.sdk.android.AuthConfig;
 import com.digits.sdk.android.Digits;
 import com.digits.sdk.android.DigitsAuthButton;
 import com.digits.sdk.android.DigitsException;
 import com.digits.sdk.android.DigitsSession;
+import com.example.daniel.latinamericanbank.userswindow.UserWindowActivity;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
 import com.twitter.sdk.android.core.TwitterCore;
 
@@ -41,6 +43,8 @@ public class LoginActivity extends AppCompatActivity {
     Button logButton;
     @BindView(R.id.la_signUpLink)
     TextView signupLink;
+    @BindView(R.id.auth_button)
+    DigitsAuthButton digitsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
         Digits.Builder digitsBuilder = new Digits.Builder().withTheme(R.style.CustomDigitsTheme);
         Fabric.with(this, new TwitterCore(authConfig), digitsBuilder.build());
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         ButterKnife.bind(this);
 
@@ -70,12 +74,15 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        //Login with pphone number
-        DigitsAuthButton digitsButton = (DigitsAuthButton) findViewById(R.id.auth_button);
+        //Login with phone number
+        //DigitsAuthButton digitsButton = (DigitsAuthButton) findViewById(R.id.auth_button);
         digitsButton.setCallback(new AuthCallback() {
             @Override
             public void success(DigitsSession session, String phoneNumber) {
                 // TODO: associate the session userID with your user model
+                Intent intent = new Intent(getApplicationContext(), UserWindowActivity.class);
+                startActivity(intent);
+
                 Toast.makeText(getApplicationContext(), "Authentication successful for "
                         + phoneNumber, Toast.LENGTH_LONG).show();
             }
