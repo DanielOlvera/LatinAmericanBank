@@ -28,7 +28,8 @@ import io.fabric.sdk.android.Fabric;
 public class LoginActivity extends AppCompatActivity {
 
     // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
-    
+    private static final String TWITTER_KEY = "I0tOlxeXGnNlAkqLi4bKOuN3L";
+    private static final String TWITTER_SECRET = "AOF8kM1MfG8XGhLzFeLEgxoLYokRQs4t24vKX6PkvZC3Cr7ZNM";
     // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
 
     private static final String TAG = "LoginActivityTAG_";

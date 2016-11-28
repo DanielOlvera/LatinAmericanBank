@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/pm_payMenu"
-        android:title="New Pay"
+
+    <item android:id="@+id/bm_balanceMenu"
+        android:title="Update"
         android:orderInCategory="10"
         app:showAsAction="never"
-        android:icon="@drawable/payment_menu"/>
+        android:icon="@drawable/balance_menu"/>
 </menu>

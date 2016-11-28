@@ -42,7 +42,7 @@ public class UserWindowActivity extends AppCompatActivity {
         viewPager.setAdapter(fragmentPagerAdapter);
 
         //Here is inflated the text view
-        userName.setText("Welcome " + FAKE_USER);
+        userName.setText("Welcome, " + FAKE_USER);
     }
 
     @Override
@@ -53,6 +53,10 @@ public class UserWindowActivity extends AppCompatActivity {
                 return true;
             case R.id.tm_transfermenu:
                 Toast.makeText(this, "New Transfer Menu", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.bm_balanceMenu:
+                Toast.makeText(this, "Account Balance Menu", Toast.LENGTH_SHORT).show();
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
