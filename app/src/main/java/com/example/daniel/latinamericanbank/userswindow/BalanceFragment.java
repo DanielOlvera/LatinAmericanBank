@@ -38,11 +38,17 @@ public class BalanceFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         setHasOptionsMenu(true);
+
     }
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.balance_menu, menu);
         //super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
     }
 }

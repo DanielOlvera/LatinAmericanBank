@@ -29,7 +29,8 @@
             android:theme="@style/AppTheme.Dark" />
 
         <meta-data
-            android:name="io.fabric.ApiKey" />
+            android:name="io.fabric.ApiKey"
+            android:value="17ac111995233ce4bce8baad6db2c66c50f2b656" />
 
         <activity android:name=".userswindow.UserWindowActivity"
             android:label="Latin American Bank"></activity>

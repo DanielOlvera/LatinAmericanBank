@@ -2,6 +2,7 @@ package com.example.daniel.latinamericanbank.userswindow;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +11,7 @@ import android.widget.TextView;
 
 import com.example.daniel.latinamericanbank.R;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -21,10 +22,11 @@ import butterknife.ButterKnife;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
 
-    List<UserPayments> userPayments;
+    private static final String TAG = "CustomAdapterTAG_";
+    ArrayList<UserPayments> userPaymentsList;
 
-    public CustomAdapter(List<UserPayments> userPayments) {
-        this.userPayments = userPayments;
+    public CustomAdapter(ArrayList<UserPayments> userPayments) {
+        this.userPaymentsList = userPayments;
     }
 
     @Override
@@ -33,19 +35,28 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
                 .from(parent.getContext())
                 .inflate(R.layout.fragment_recycler_pay_row, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
+        Log.d(TAG, "onCreateViewHolder: " + viewHolder);
         return viewHolder;
     }
 
     @Override
     public void onBindViewHolder(CustomAdapter.ViewHolder holder, int position) {
-        holder.payTextViewName.setText(userPayments.get(position).namePaid);
-        holder.payTextViewAmmount.setText(userPayments.get(position).ammountPaid);
-        holder.payImageView.setImageResource(userPayments.get(position).photoId);
+        holder.payTextViewName.setText(userPaymentsList.get(position).namePaid);
+        holder.payTextViewAmmount.setText(userPaymentsList.get(position).ammountPaid);
+        holder.payImageView.setImageResource(userPaymentsList.get(position).photoId);
+        Log.d(TAG, "onBindViewHolder: " + position);
     }
 
     @Override
     public int getItemCount() {
-        return userPayments.size();
+        Log.d(TAG, "getItemCount: " + userPaymentsList.size() + userPaymentsList.get(1));
+        return userPaymentsList.size();
+    }
+
+    @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+        super.onAttachedToRecyclerView(recyclerView);
+        Log.d(TAG, "onAttachedToRecyclerView: " + recyclerView);
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
@@ -62,6 +73,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         public ViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
+            Log.d(TAG, "ViewHolder: " + itemView);
         }
     }
 }

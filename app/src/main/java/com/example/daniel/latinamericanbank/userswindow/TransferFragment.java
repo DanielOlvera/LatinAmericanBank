@@ -50,4 +50,9 @@ public class TransferFragment extends Fragment {
         inflater.inflate(R.menu.transfer_menu, menu);
         //super.onCreateOptionsMenu(menu, inflater);
     }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
 }
