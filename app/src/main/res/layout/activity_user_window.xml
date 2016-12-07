@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/solobackground"
     tools:context="com.example.daniel.latinamericanbank.userswindow.UserWindowActivity">
 
     <LinearLayout
@@ -25,8 +26,7 @@
         <android.support.v4.view.ViewPager
             android:id="@+id/auw_viewPgr"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/colorGray50">
+            android:layout_height="match_parent">
             <android.support.v4.view.PagerTabStrip
                 android:id="@+id/auw_pagrTabStrp"
                 android:layout_width="match_parent"
