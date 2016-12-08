@@ -1,14 +1,180 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.daniel.latinamericanbank.userswindow.BalanceFragment">
+    tools:context="com.example.daniel.latinamericanbank.userswindow.BalanceFragment"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/fb_txtView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello BalanceFragment!" />
+        android:layout_height="wrap_content"
+        android:text="Hello BalanceFragment!"/>
 
-</FrameLayout>
+    <TableLayout
+        android:id="@+id/fb_tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <TableRow
+            android:id="@+id/fb_trCheckings"
+            android:background="@color/colorGray100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/fb_trTxVwCheckings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_checking"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/fb_trTxtVwCheckingsCurr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_currency"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="60dp"/>
+
+            <TextView
+                android:id="@+id/fb_trTxtVwCheckingsValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_checking_value"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/fb_trTxtVwCheckingsDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_detail"
+                android:textColor="@color/colorPrimary"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="15dp"
+                android:onClick="doChecking"/>
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/fb_trSavings"
+            android:background="@color/colorGray100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/fb_trTxtVwSavings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_savings"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/fb_trTxtVwSavingsCurr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_currency"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="60dp"/>
+
+            <TextView
+                android:id="@+id/fb_trTxtVwSavingsValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_savings_value"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/fb_trTxtVwSavingsDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_detail"
+                android:textColor="@color/colorPrimary"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="15dp"
+                android:onClick="doSavings"/>
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/fb_trCredit"
+            android:background="@color/colorGray100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/fb_trTxtVwCredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_credit"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/fb_trTxtVwCreditCurr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_currency"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="60dp"/>
+
+            <TextView
+                android:id="@+id/fb_trTxtVwCreditValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_savings_value"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/fb_trTxtVwCreditDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_detail"
+                android:textColor="@color/colorPrimary"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="15dp"
+                android:onClick="doCredit"/>
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

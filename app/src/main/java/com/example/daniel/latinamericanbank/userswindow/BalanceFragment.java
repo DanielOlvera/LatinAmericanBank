@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 
 import com.example.daniel.latinamericanbank.R;
 
+import butterknife.BindView;
+
 
 /**
  * A simple {@link Fragment} subclass.
