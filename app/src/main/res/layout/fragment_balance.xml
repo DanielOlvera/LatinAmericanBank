@@ -67,8 +67,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"
-                android:paddingLeft="15dp"
-                android:onClick="doChecking"/>
+                android:paddingLeft="15dp"/>
 
         </TableRow>
         <TableRow
@@ -119,8 +118,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"
-                android:paddingLeft="15dp"
-                android:onClick="doSavings"/>
+                android:paddingLeft="15dp"/>
 
         </TableRow>
         <TableRow
@@ -171,8 +169,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"
-                android:paddingLeft="15dp"
-                android:onClick="doCredit"/>
+                android:paddingLeft="15dp"/>
 
         </TableRow>
     </TableLayout>

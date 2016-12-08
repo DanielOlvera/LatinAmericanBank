@@ -18,5 +18,6 @@
 
 -keepclassmembers class fqcn.of.javascript.interface.for.webview {
    private static final String *;
-   public static final String *;
 }
+
+-dontwarn okio.**
