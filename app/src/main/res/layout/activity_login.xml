@@ -25,7 +25,24 @@
             android:layout_marginBottom="24dp"
             android:layout_gravity="center_horizontal" />
 
+        <!--User label-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+
+            <EditText android:id="@+id/la_usrEdtTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/colorGray400"
+                android:hint="User" />
+
+        </android.support.design.widget.TextInputLayout>
+
         <!--Email label-->
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,25 +53,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:hint="User" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <!--Passsword label-->
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp">
-
-            <EditText android:id="@+id/la_passEdtTxt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
+                android:textColor="@color/colorGray400"
                 android:hint="Email"/>
 
         </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me!"
+                android:textColor="@color/colorGray600"/>
+            <CheckBox
+                android:id="@+id/al_rememberMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remember me!"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/la_lgnBtn"

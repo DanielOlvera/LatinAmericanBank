@@ -1,7 +1,9 @@
 package com.example.daniel.latinamericanbank.userswindow;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
@@ -11,6 +13,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.daniel.latinamericanbank.LoginActivity;
 import com.example.daniel.latinamericanbank.R;
 import com.example.daniel.latinamericanbank.paywindow.NewPayActivity;
 
@@ -25,7 +28,9 @@ public class UserWindowActivity extends AppCompatActivity {
     PagerTabStrip pagerTabStrip;
     @BindView(R.id.auw_userName)
     TextView userName;
-    FragmentPagerAdapter fragmentPagerAdapter;
+
+    private FragmentPagerAdapter fragmentPagerAdapter;
+    private SharedPreferences sharedPreferences;
 
     private static final String FAKE_USER = "Pedro Páramo";
 
@@ -44,7 +49,9 @@ public class UserWindowActivity extends AppCompatActivity {
         viewPager.setAdapter(fragmentPagerAdapter);
 
         //Here is inflated the text view
-        userName.setText("Welcome, " + FAKE_USER);
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String usrName = sharedPreferences.getString(LoginActivity.PREF_USER, "").toString();
+        userName.setText("Welcome, " + usrName);
     }
 
     @Override

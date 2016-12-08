@@ -11,8 +11,10 @@
     <string name="balance_savings">Savings</string>
     <string name="balance_credit">Credit</string>
     <string name="balance_currency">$</string>
-    <string name="balance_checking_value">0</string>
-    <string name="balance_savings_value">0</string>
+    <string name="balance_checking_value">700</string>
+    <string name="balance_savings_value">30</string>
     <string name="balance_credit_value">0</string>
     <string name="balance_detail"><u>Details</u></string>
+
+
 </resources>
