@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.daniel.latinamericanbank.R;
 
@@ -19,7 +20,6 @@ import butterknife.BindView;
  * A simple {@link Fragment} subclass.
  */
 public class BalanceFragment extends Fragment {
-
 
     public BalanceFragment() {
         // Required empty public constructor

@@ -1,5 +1,6 @@
 package com.example.daniel.latinamericanbank.userswindow;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerTabStrip;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.daniel.latinamericanbank.R;
+import com.example.daniel.latinamericanbank.paywindow.NewPayActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -49,6 +51,8 @@ public class UserWindowActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.pm_payMenu:
+                Intent intent = new Intent(this, NewPayActivity.class);
+                startActivity(intent);
                 Toast.makeText(this, "New Payment Menu", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.tm_transfermenu:

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Latin American Bank</string>
     <string name="signupActivity">Signup</string>
+    <string name="newPayActivity">New Pay</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -9,9 +10,9 @@
     <string name="balance_checking">Checking</string>
     <string name="balance_savings">Savings</string>
     <string name="balance_credit">Credit</string>
-    <string name="balance_currency" >$</string>
-    <string name="balance_checking_value" >0</string>
-    <string name="balance_savings_value" >0</string>
-    <string name="balance_credit_value" >0</string>
+    <string name="balance_currency">$</string>
+    <string name="balance_checking_value">0</string>
+    <string name="balance_savings_value">0</string>
+    <string name="balance_credit_value">0</string>
     <string name="balance_detail"><u>Details</u></string>
 </resources>

@@ -52,7 +52,7 @@
                 android:text="@string/balance_checking_value"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"/>
 
@@ -64,7 +64,7 @@
                 android:textColor="@color/colorPrimary"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"
                 android:paddingLeft="15dp"
@@ -84,7 +84,7 @@
                 android:text="@string/balance_savings"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/fb_trTxtVwSavingsCurr"
@@ -93,7 +93,7 @@
                 android:text="@string/balance_currency"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="60dp"/>
 
@@ -104,7 +104,7 @@
                 android:text="@string/balance_savings_value"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"/>
 
@@ -116,7 +116,7 @@
                 android:textColor="@color/colorPrimary"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"
                 android:paddingLeft="15dp"
@@ -136,7 +136,7 @@
                 android:text="@string/balance_credit"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/fb_trTxtVwCreditCurr"
@@ -145,7 +145,7 @@
                 android:text="@string/balance_currency"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="60dp"/>
 
@@ -156,7 +156,7 @@
                 android:text="@string/balance_savings_value"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"/>
 
@@ -168,7 +168,7 @@
                 android:textColor="@color/colorPrimary"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"
                 android:paddingLeft="15dp"
